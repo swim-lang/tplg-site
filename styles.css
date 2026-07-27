@@ -306,6 +306,7 @@ body.is-loading .nav__wordmark { visibility: hidden; }
 .menu__aside-links a:hover::after { transform: scaleX(1); transform-origin: left; }
 .menu__aside-bottom { display: flex; flex-direction: column; gap: 20px; }
 .menu__tagline { font-family: var(--font-display); font-style: italic; font-size: 22px; color: var(--cream); }
+.menu__foot { display: none; }
 
 /* ---------- hero ---------- */
 .hero { padding: 170px var(--gutter) 0; }
@@ -734,8 +735,14 @@ body.is-revealed .reveal-load[data-load-order="4"] { transition-delay: 0.52s; }
 
   /* menu overlay */
   .menu__bar { padding: 18px var(--gutter); }
-  .menu__body { padding: 32px var(--gutter) 32px; }
-  .menu__item { gap: 18px; padding: 20px 0; }
+  .menu__bar .micro--cream { display: none; }
+  .menu__body { padding: 48px var(--gutter) 32px; }
+  .menu__item { gap: 18px; padding: 26px 0; }
+  .menu__foot {
+    display: flex;
+    padding: 20px var(--gutter) 32px;
+    border-top: 1px solid var(--cream-35);
+  }
 
   /* hero */
   .hero { padding-top: 96px; }
