@@ -51,21 +51,10 @@
       background: #f9efe1;
       position: relative;
     }
-    .phone__island {
-      position: absolute;
-      top: 18px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 110px;
-      height: 30px;
-      background: #10182a;
-      border-radius: 20px;
-      z-index: 10;
-    }
+    .phone__island { display: none; }
     .phone__screen iframe {
       width: 100%;
-      height: calc(100% - 56px);
-      margin-top: 56px;
+      height: 100%;
       border: none;
       display: block;
     }
@@ -89,7 +78,6 @@
         box-shadow: none;
       }
       .phone__screen { border-radius: 0; }
-      .phone__screen iframe { height: 100%; margin-top: 0; }
     }
   </style>
 </head>
